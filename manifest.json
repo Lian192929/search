@@ -1,0 +1,71 @@
+{
+	"name": "iTz Search",
+	"short_name": "iTzSearch",
+	"start_url": "https://itzsearch.netlify.app/",
+	"display": "standalone",
+	"background_color": "#9900ff",
+	"description": "iTz Search is a fast and efficient open-source search engine designed for everyone.",
+	"icons": [
+	  {
+		"src": "./appicon/16x16.png",
+		"sizes": "16x16",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/32x32.png",
+		"sizes": "32x32",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/48x48.png",
+		"sizes": "48x48",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/64x64.png",
+		"sizes": "64x64",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/72x72.png",
+		"sizes": "72x72",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/96x96.png",
+		"sizes": "96x96",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/128x128.png",
+		"sizes": "128x128",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/144x144.png",
+		"sizes": "144x144",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/152x152.png",
+		"sizes": "152x152",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/192x192.png",
+		"sizes": "192x192",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/256x256.png",
+		"sizes": "256x256",
+		"type": "image/png"
+	  },
+	  {
+		"src": "./appicon/512x512.png",
+		"sizes": "512x512",
+		"type": "image/png"
+	  }
+	]
+  }
+  

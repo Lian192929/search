@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/png" href="img/logo.png">
+	<title>iTz Search - Open Source Search Engine</title>
+	<meta name="description"
+		content="iTz Search is a fast and efficient open-source search engine designed for everyone.">
+	<meta name="keywords"
+		content="Develop website, web development, web design, innovative solutions, user-friendly, cutting-edge technology, responsive design, custom web solutions, dynamic user experience, professional development services.">
+	<meta name="author" content="iTz">
+	<meta property="og:site_name" content="iTz Search">
+	<meta property="og:url" content="https://itzsearch.netlify.app">
+	<meta property="og:title" content="iTz Search - Open Source Search Engine">
+	<meta property="og:description"
+		content="iTz Search is a fast and efficient open-source search engine designed for everyone.">
+	<meta property="og:image" content="">
+	<meta name="theme-color" content="#9900FF">
+	<meta property="og:type" content="website">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+	<link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+	<nav>
+		<div class="dropdownmob">
+			<h1><i class="fa-solid fa-ellipsis-vertical icon7"></i> Menu</h1>
+			<div class="dropdowncontent">
+				<li><a href="https://itzbot.netlify.app" target="_blank"><i class="fa fa-code icon1"></i> iTzBot</a></li>
+				<li><a href="https://chat.devevil.com/" target="_blank"><i class="fa fa-message icon2"></i>
+						iTzChat</a></li>
+				<li><a href="form.html" target="_blank"><i class="fa fa-phone icon3"></i> Contact</a>
+				</li>
+				<li><a href="https://github.com" target="_blank"><i
+							class="fab fa-github icon4"></i> Source Code</a></li>
+				<li><a href="./privacy" target="_blank"><i class="fa-solid fa-scroll icon5"></i> Privacy</a></li>
+				<li><a href="./terms" target="_blank"><i class="fa-solid fa-file-lines icon6"></i> Terms</a></li>
+				<li><a href="https://dsc.gg/devevil" target="_blank"><i class="fab fa-discord discord"></i> Discord</a>
+				</li>
+				<li><a id="dark" class="theme-button active" data-theme="default"><i class="fas fa-moon"></i> Dark</a>
+				</li>
+				<li><a id="light" class="theme-button" data-theme="light"><i class="fas fa-sun"></i> Light</a></li>
+			</div>
+		</div>
+
+		<ul class="navbar">
+			<li><a href="https://itzbot.netlify.app" target="_blank"><i class="fa fa-code icon1"></i> iTzBot</a></li>
+			<li><a href="form.html" target="_blank"><i class="fa fa-message icon2"></i> ItzChat</a>
+			</li>
+			<li><a href="form.html" target="_blank"><i class="fa fa-phone icon3"></i> Contact</a></li>
+			<li><a href="https://github.com/" target="_blank"><i
+						class="fab fa-github icon4"></i> Source Code</a></li>
+			<li><a href="./privacy" target="_blank"><i class="fa-solid fa-scroll icon5"></i> Privacy</a></li>
+			<li><a href="./terms" target="_blank"><i class="fa-solid fa-file-lines icon6"></i> Terms</a></li>
+			<div class="dropdown navbar">
+				<button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-ellipsis-vertical icon7"></i>
+					More</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a id="dark" class="theme-button active" data-theme="default"><i class="fas fa-moon"></i> Dark</a>
+					<a id="light" class="theme-button" data-theme="light"><i class="fas fa-sun"></i> Light</a>
+				</div>
+			</div>
+			<li class="right"><a href="https://discord.gg/3WUfYfVj3Z" target="_blank"><i class="fab fa-discord discord"></i>
+					Discord</a></li>
+		</ul>
+	</nav>
+
+	 
+	
+	<p class="desc">iTz Search is built with the latest technology and algorithms, enabling it to provide fast and
+		accurate search results across a broad range of content. Whether you're searching for news articles, blogs, or
+		images, iTz Search can help you find what you're looking for quickly and easily.</p>
+	<br><br>
+	<form id="search-form">
+		<div class="search-container">
+			<input type="text" id="query" name="query" placeholder="Search the iTz Universe..." autocomplete="off">
+			<button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+			<button type="button" id="toggle-results"><i class="fa-solid fa-image"></i></button>
+		</div>
+		<br>
+		<div class="suggestions">
+			<div class="suggest">Wikipedia</div>
+			<div class="suggest">ChatGPT</div>
+			<div class="suggest">Crypto</div>
+			<div class="suggest">Youtube</div>
+		</div>
+	</form>
+	<br>
+	<iframe name="resultFrame" id="resultFrame" frameborder="0" width="100%" height="1000"
+		style="border-radius: 24px; display: none;"></iframe>
+
+	<div id="search-results"></div>
+
+	<i class="fa-solid fa-angles-down scroll"></i>
+
+	<br>
+	<div class="why-container">
+		<h1>iTz Search</h1>
+		<div class="why">
+			<div class="whyicon"><i class="fa-solid fa-satellite-dish"></i></div>
+			<br>
+			<div class="whytitle">Fast and Accurate Results with iTz Search</div>
+			<div class="whydesc">Need to find information quickly and reliably? iTz Search has got you covered. Our
+				search engine is designed to provide lightning-fast results, without sacrificing accuracy or relevance.
+				Whether you're looking for the latest news, researching a topic for work, or just browsing for fun,
+				iTz Search can help you find what you need in no time.</div>
+		</div>
+		<div class="why">
+			<div class="whyicon"><i class="fa-solid fa-shield"></i></div>
+			<br>
+			<div class="whytitle">Protect Your Privacy with iTz Search</div>
+			<div class="whydesc">Are you tired of search engines tracking your every move online? Look no further than
+				DevEvil Search! Our open-source search engine allows you to search the web safely and anonymously,
+				without sacrificing speed or efficiency. Say goodbye to targeted ads and invasive data collection.</div>
+		</div>
+		<div class="why">
+			<div class="whyicon"><i class="fa-solid fa-book-open"></i></div>
+			<br>
+			<div class="whytitle">Join the Open-Source Revolution with iTz Search</div>
+			<div class="whydesc">Are you passionate about open-source software and the power of community-driven
+				development? iTz Search is the search engine for you! Our platform is built on open-source
+				technologies, and we welcome contributions from developers and users alike. By using iTz Search,
+				you're not just getting a great search engine – you're joining a movement to make software more
+				transparent, accessible, and democratic.</div>
+		</div>
+	</div>
+
+	<a href="https://itzbot.netlify.app/" target="_blank" class="devevil">Join itzbot.Com! <i
+			class="fa-solid fa-right-to-bracket"></i></a>
+	<br><br>
+	<hr>
+	<footer>
+		<div class="footer-left">
+			<img src="img/logo.png" alt="Logo" id="logo2" draggable="false">
+			<p>Experience the internet with enhanced speed, utmost privacy, and optimal security.</p>
+		</div>
+		<div class="footer-middle">
+			<ul>
+				<li><a href="https://itzbot.netlify.app/" target="_blank"><i class="fa fa-code"></i> itzbot.Com</a></li>
+				<li><a href="form.html" target="_blank"><i class="fa fa-message"></i> iTzChat</a>
+				</li>
+				<li><a href="form.html" target="_blank"><i class="fa fa-phone"></i> Contact</a></li>
+				<li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i>
+						Source Code</a></li>
+				<li><a href="privacy.html" target="_blank"><i class="fa-solid fa-scroll"></i> Privacy</a></li>
+				<li><a href="terms.html" target="_blank"><i class="fa-solid fa-file-lines"></i> Terms</a></li>
+				<li><a href="https://discord.gg/3WUfYfVj3Z" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+			</ul>
+		</div>
+		<div class="footer-right">
+			<p>Copyright © <script>document.write(new Date().getFullYear())</script> iTz.Com & iTz Search, All rights reserved</p>
+		</div>
+	</footer>
+
+
+	<script src="js/index.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function () {
+				navigator.serviceWorker.register('service.js').then(function (registration) {
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function (err) {
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+	</script>
+</body>
+
+</html>
